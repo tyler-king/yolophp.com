@@ -1,0 +1,23 @@
+body {
+    width: 500px;
+    margin: 0 auto;
+    font-family: verdana, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 70px;
+    font-family: 'Archivo Black', sans-serif;
+    margin-bottom: 0;
+    color: #C0383A;
+}
+
+header h2 {
+    font-size: 30px;
+    font-family: 'Archivo Narrow', sans-serif;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
