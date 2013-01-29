@@ -81,9 +81,9 @@
             <img src="igor.jpg" alt="Igor">
         </a>
 
-        <p>Brought to you by <a href="https://twitter.com/igorwesome">@igorwesome</a>.</p>
+        <p class="blink">Brought to you by <a href="https://twitter.com/igorwesome">@igorwesome</a>.</p>
 
-        <p>He also made <a href="https://github.com/fabpot/Silex">Silex</a>.</p>
+        <p class="blink">He also made <a href="https://github.com/fabpot/Silex">Silex</a>.</p>
     </div>
 </article>
 
@@ -91,5 +91,15 @@
 gif titles: http://textanim.com/
 -->
 
+<script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        setInterval(function() {
+            $('.blink').fadeOut(400, function() {
+                $(this).fadeIn(400);
+            });
+        }, 2000);
+    });
+</script>
 </body>
 </html>
