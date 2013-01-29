@@ -2,19 +2,94 @@
 <html>
 <head>
     <title>YOLO - The microframework with swag.</title>
-    <link href='http://fonts.googleapis.com/css?family=Archivo+Black|Archivo+Narrow' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 
 <header>
     <h1>YOLO</h1>
-    <h2>The microframework with swag.</h2>
+    <h2><marquee>The microframework with swag.</marquee></h2>
 </header>
 
-<p>foo</p>
-<p>bar</p>
-<p>baz</p>
+<article>
+    <h1 id="example"><span>Example</span></h1>
+
+<pre><code>&lt;?
+
+<span class="keyword">use</span> <span class="ns">Symfony</span>\<span class="ns">Component</span>\<span class="ns">HttpFoundation</span>\<span class="ns">Request</span>;
+<span class="keyword">use</span> <span class="ns">Symfony</span>\<span class="ns">Component</span>\<span class="ns">HttpFoundation</span>\<span class="ns">Response</span>;
+
+<span class="var">$container</span> <span class="keyword">=</span> <span class="ns">Yolo</span>\<span class="class">Factory</span><span class="keyword">::</span>createContainer();
+<span class="var">$builder</span> <span class="keyword">=</span> <span class="var">$container</span><span class="keyword">-&gt;</span>get(<span class="str">'route_builder'</span>);
+
+<span class="var">$builder</span><span class="keyword">-&gt;</span>get(<span class="str">'hello'</span>, <span class="str">'/'</span>, <span class="func">function</span> (<span class="class">Request</span> <span class="var">$request</span>) {
+    <span class="keyword">return new</span> <span class="class">Response</span>(<span class="str">"Hallo welt, got swag yo!\n"</span>);
+});
+
+<span class="var">$front</span> = <span class="var">$container</span><span class="keyword">-&gt;</span>get(<span class="str">'front_controller'</span>);
+<span class="var">$front</span><span class="keyword">-&gt;</span>run();
+
+?&gt;</code></pre>
+
+    <h1 id="about"><span>About</span></h1>
+
+    <p>
+        YOLO is the only PHP microframework with swag.
+    </p>
+
+    <ul>
+        <li>Based on the Symfony components</li>
+        <li>Keeps responsibilities separated</li>
+        <li>Requires lots of boilerplate code!</li>
+    </ul>
+
+    <p>
+        Beware, this library is not for the faint of heart. ;-)
+    </p>
+
+    <h1 id="download"><span>Download</span></h1>
+
+    <p>
+        You can download and install YOLO by using the carefully crafted
+        <a href="http://getcomposer.org/">composer</a>:
+    </p>
+
+    <pre class="terminal"><code><span class="dollar"></span>composer require igorw/yolo:dev-master</code></pre>
+
+    <p style="text-align: right;">
+        <img src="beethoven.png" alt="Beethoven approves">
+    </p>
+
+    <h1 id="docs"><span>Docs</span></h1>
+
+    <p class="under-construction">
+        Section under construction
+    </p>
+
+    <h1 id="dev"><span>Dev</span></h1>
+
+    <p>Found a bug? Want to contribute? Fork you <a href="https://github.com/igorw/yolo">on GitHub</a>.</p>
+
+    <p>Pink ponies and flying purple elephants will lead the way.</p>
+
+    <p>True story.</p>
+
+    <h1 id="author"><span>Author</span></h1>
+
+    <div class="author">
+        <a href="https://twitter.com/igorwesome" class="avatar">
+            <img src="igor.jpg" alt="Igor">
+        </a>
+
+        <p>Brought to you by <a href="https://twitter.com/igorwesome">@igorwesome</a>.</p>
+
+        <p>He also made <a href="https://github.com/fabpot/Silex">Silex</a>.</p>
+    </div>
+</article>
+
+<!--
+gif titles: http://textanim.com/
+-->
 
 </body>
 </html>

@@ -1,6 +1,6 @@
 body {
     width: 500px;
-    margin: 0 auto;
+    margin: 0 auto 50px;
     font-family: verdana, sans-serif;
 }
 
@@ -10,14 +10,118 @@ header {
 
 header h1 {
     font-size: 70px;
-    font-family: 'Archivo Black', sans-serif;
+    font-family: Comic Sans, Comic Sans MS, sans-serif;
     margin-bottom: 0;
     color: #C0383A;
 }
 
 header h2 {
     font-size: 30px;
-    font-family: 'Archivo Narrow', sans-serif;
+    font-family: Comic Sans, Comic Sans MS, sans-serif;
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+}
+
+/* titles */
+
+article h1 {
+    margin: 0 auto;
+    height: 56px;
+}
+
+article h1 > span {
+    display: none;
+}
+
+#example {
+    width: 230px;
+    background: url(example.gif);
+}
+
+#about {
+    width: 166px;
+    background: url(about.gif);
+}
+
+#download {
+    width: 253px;
+    background: url(download.gif);
+}
+
+#docs {
+    width: 139px;
+    background: url(docs.gif);
+}
+
+#dev {
+    width: 110px;
+    background: url(dev.gif);
+}
+
+#author {
+    width: 189px;
+    background: url(author.gif);
+}
+
+/* syntax */
+
+code {
+    font-family: Comic Sans, Comic Sans MS, sans-serif;
+}
+
+.keyword {
+    color: #754838;
+}
+
+.ns {
+    color: #7C1928;
+}
+
+.var {
+    color: #334497;
+}
+
+.class {
+    color: #690097;
+}
+
+.func {
+    color: #A1005F;
+}
+
+.str {
+    color: #146322;
+}
+
+/* content */
+
+a {
+    display: inline-block;
+    margin-top: 0;
+    color: #741F75;
+    background: #E68AED;
+}
+
+.terminal {
+    margin-left: 40px;
+}
+
+.terminal .dollar:before {
+    content: "$ ";
+}
+
+.under-construction {
+    background: url(under-construction.gif) no-repeat;
+    height: 38px;
+    padding-left: 48px;
+    padding-top: 8px;
+}
+
+.author {
+    padding-top: 15px;
+}
+
+.author .avatar {
+    float: right;
+    border: 1px solid black;
 }
